@@ -26,7 +26,7 @@ Modu³ CGI-XML konwertuje zmienne CGI.pm z/do formatu XML.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
