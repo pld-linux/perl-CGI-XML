@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	CGI
-%define	pnam	XML
+%define		pdir	CGI
+%define		pnam	XML
 Summary:	CGI::XML - Perl extension for converting CGI.pm variables to/from XML
 Summary(pl):	CGI::XML - rozszerzenie Perla do konwersji zmiennych CGI.pm do/z formatu XML
 Name:		perl-CGI-XML
