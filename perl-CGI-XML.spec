@@ -3,7 +3,7 @@ Summary:	CGI-XML perl module
 Summary(pl):	Modu³ perla CGI-XML
 Name:		perl-CGI-XML
 Version:	0.1
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
@@ -38,7 +38,7 @@ install examples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/CGI/XML
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
