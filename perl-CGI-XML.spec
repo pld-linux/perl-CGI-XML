@@ -5,11 +5,11 @@ Summary:	CGI::XML perl module
 Summary(pl):	Modu³ perla CGI::XML
 Name:		perl-CGI-XML
 Version:	0.1
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-XML-Parser
 BuildArch:	noarch
@@ -25,7 +25,8 @@ Modu³ CGI::XML konwertuje zmienne CGI.pm z/do formatu XML.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -42,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/CGI/XML.pm
+%{perl_vendorlib}/CGI/XML.pm
 %{_mandir}/man3/*
 
 %dir %{_examplesdir}/%{name}-%{version}
