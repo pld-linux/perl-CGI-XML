@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla CGI-XML
 Name:		perl-CGI-XML
 Version:	0.1
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI-XML-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI-XML-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-XML-Parser
@@ -30,10 +30,10 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install -d $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 make install DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install examples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/CGI/XML
@@ -56,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_mandir}/man3/*
 
-%dir /usr/src/examples/%{name}-%{version}
-%attr(755,root,root) /usr/src/examples/%{name}-%{version}/*
+%dir %{_prefix}/src/examples/%{name}-%{version}
+%attr(755,root,root) %{_prefix}/src/examples/%{name}-%{version}/*
