@@ -1,12 +1,11 @@
-%define	pdir	CGI
-%define	pnam	XML
 %include	/usr/lib/rpm/macros.perl
+%define		pdir	CGI
+%define		pnam	XML
 Summary:	CGI-XML perl module
 Summary(pl):	Modu³ perla CGI-XML
 Name:		perl-CGI-XML
 Version:	0.1
 Release:	8
-
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ CGI-XML module converts CGI.pm variables from/to XML.
 Modu³ CGI-XML konwertuje zmienne CGI.pm z/do formatu XML.
 
 %prep
-%setup -q -n CGI-XML-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
