@@ -1,12 +1,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	CGI
 %define		pnam	XML
-Summary:	CGI::XML perl module
-Summary(pl):	Modu³ perla CGI::XML
+Summary:	CGI::XML - Perl extension for converting CGI.pm variables to/from XML
+Summary(pl):	CGI::XML - rozszerzenie Perla do konwersji zmiennych CGI.pm do/z formatu XML
 Name:		perl-CGI-XML
 Version:	0.1
 Release:	9
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	219b1fe22dc6589a52f07b1301b88d0b
