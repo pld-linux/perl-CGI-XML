@@ -27,7 +27,7 @@ Modu³ CGI::XML konwertuje zmienne CGI.pm z/do formatu XML.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
