@@ -31,11 +31,11 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_exampledir}/%{name}-%{version}
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT%{_exampledir}/%{name}-%{version}
+install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 gzip -9nf Changes README
 
@@ -48,5 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitelib}/CGI/XML.pm
 %{_mandir}/man3/*
 
-%dir %{_exampledir}/%{name}-%{version}
-%attr(755,root,root) %{_exampledir}/%{name}-%{version}/*
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*
