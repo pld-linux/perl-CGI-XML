@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	CGI
 %define		pnam	XML
-Summary:	CGI-XML perl module
-Summary(pl):	Modu³ perla CGI-XML
+Summary:	CGI::XML perl module
+Summary(pl):	Modu³ perla CGI::XML
 Name:		perl-CGI-XML
 Version:	0.1
 Release:	8
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-CGI-XML module converts CGI.pm variables from/to XML.
+CGI::XML module converts CGI.pm variables from/to XML.
 
 %description -l pl
-Modu³ CGI-XML konwertuje zmienne CGI.pm z/do formatu XML.
+Modu³ CGI::XML konwertuje zmienne CGI.pm z/do formatu XML.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
