@@ -1,0 +1,11 @@
+--- CGI-XML-0.1/test.pl~	Sun Apr 25 22:42:42 2004
++++ CGI-XML-0.1/test.pl	Sun Apr 25 22:42:42 2004
+@@ -3,7 +3,7 @@
+ 
+ BEGIN { $| = 1; print "1..1\n"; }
+ END {print "not ok 1\n" unless $loaded;}
+-use XML::CGI;
++use CGI::XML;
+ $loaded = 1;
+ print "ok 1\n";
+ 
