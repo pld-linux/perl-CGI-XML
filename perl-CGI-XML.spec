@@ -3,7 +3,7 @@ Summary:	CGI-XML perl module
 Summary(pl):	Modu³ perla CGI-XML
 Name:		perl-CGI-XML
 Version:	0.1
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI-XML-%{version}.ta
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-XML-Parser
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
