@@ -6,7 +6,7 @@
 %define		pdir	CGI
 %define		pnam	XML
 Summary:	CGI::XML - Perl extension for converting CGI.pm variables to/from XML
-Summary(pl):	CGI::XML - rozszerzenie Perla do konwersji zmiennych CGI.pm do/z formatu XML
+Summary(pl.UTF-8):   CGI::XML - rozszerzenie Perla do konwersji zmiennych CGI.pm do/z formatu XML
 Name:		perl-CGI-XML
 Version:	0.1
 Release:	10
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 CGI::XML module converts CGI.pm variables from/to XML.
 
-%description -l pl
-Modu≥ CGI::XML konwertuje zmienne CGI.pm z/do formatu XML.
+%description -l pl.UTF-8
+Modu≈Ç CGI::XML konwertuje zmienne CGI.pm z/do formatu XML.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
